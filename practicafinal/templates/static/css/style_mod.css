@@ -1,0 +1,24 @@
+   
+     /*MODIFICACIONES */
+    #featured, header span{
+        color: {{colorletra}};     
+    }
+    
+    
+	body
+	{
+		background: #202020 url({{imagenfondo}}) repeat;
+	}
+    
+    #header{
+        background: {{ colornavbar }} none repeat scroll 0 0;
+    }
+    
+    #title {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, {{colortitulotop}} 0%, {{colortitulobot}} 71%, {{colortitulobot}} 100%) repeat scroll 0 0;
+    border: 3px solid {{colorbordetitulo}};
+    border-radius: 20px;
+    font-size: 4em;
+    line-height: normal;
+    margin: 0 80px;
+    }

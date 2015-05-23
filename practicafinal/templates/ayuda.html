@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Ex Machina by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Practica Final-David Moreno</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="shortcut icon" href="/static/images/favicon.jpeg">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="/static/js/skel.min.js"></script>
+		<script src="/static/js/skel-panels.min.js"></script>
+		<script src="/static/js/init.js"></script>
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/style-desktop.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+    <!-- Banner -->
+		<div id="banner">
+			<div class="container">
+			</div>
+		</div>
+	<!-- /Banner -->
+
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+					
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="/">Actividades CM</a></h1>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/todas">Todas</a></li>
+							<li><a href="/login">Login</a></li>
+							<li class="active"><a href="/ayuda">Ayuda</a></li>
+						</ul>
+					</nav>
+
+			</div>
+		</div>
+	<!-- Header -->
+		
+        <div id="usuario">
+            {{ usuario|safe }}
+        </div>
+
+	<!-- Main -->
+		<div id="featured">
+				
+			<!-- Main -->
+			<div id="main" class="container">
+                <header id="ayuda">
+                    <h2>AYUDA</h2>
+                    <br>
+                    <div id="lista">
+                    <ul class="default">
+                        <li><strong>La aplicación muestra las actividades de ocio y cultura de la comunidad de Madrid</strong></li>
+                        <li>En el recurso <strong>/</strong> aparecerán las 10 actividades más proximas al día actual y seguidamente al final de la página aparecerá una lista con los usuarios registrados a la aplicación</li>
+                        <li>En el recurso <strong>/todas</strong> aparecerán todas las actividades de la aplicaión junto a un enlace para cada una de ellas.
+                            También aparecerá en el principio un formulario que permitirá filtrar las actividades según el tipo que queramos filtrar.
+                            Si eres un usuario autenficado también se incluirá la opción de actualizar las actividades de la página mediante un botón que se
+                            encuentra al inicio de la página (junto a la fecha de última actualización y el número de actividades que se muestra). También si eres
+                            un usuario autentificado tendrás la opción de seguir/dejar de seguir las actividades que quieras y añadirlas a tu página de actividades personal
+                            (esta página se describe más adelante)  </li>
+                        <li>Para poder iniciar sesión podrás acceder al formulario de inicio de sesión mediante el link <strong>LOGIN</strong> de la barra de navegación
+                            o bien accediendo al recurso <strong>/login</strong>. En esta página se mostrará el formulario inicio de sesión o un link para
+                            cerrar sesión si ya estaba identificado</li>
+                        <li>Existen páginas de usuario del estilo <strong>/"usuario"</strong> en la cual "usuario" es el nombre de un usuario identificado.
+                            En este estilo de páginas aparecerán el título y una descripcioón de la página del usuario y seguidamente 10 acttividades seleccionadas junto a la fecha en las que hna sido seleccionadas por el 
+                            usuario. Si el usuario tiene más de 10 actividades seleccionadas aparecereán al final de la página unos botones para acceder a las 10 actividaes
+                            siguientes o a las 10 actividades anteriores. Además si tu eres el usuario que pertenece a esa página podrás cambiar el título, la descripción y el estilo
+                            CSS de tu página personal</li>
+                        <li>También se podrá acceder a un canal RSS de las actividades de cada usuario mediante el recurso <strong>/usuario/rss</strong></li>
+                        <li>Una vez accedas a mas información de una actividad se te redigirá a la página <strong>/actividad/"id"</strong> siendo id un identificador de la actividad
+                            donde se mostrará la actividad junto a mas información sobre ella (localización, lugar, distrito...si la hubiera) y un enlace a la página
+                            oficial de la Comunidad de Madrid </li>
+                    </ul>   
+                    </div>
+                </header>
+			</div>
+			<!-- Main -->
+
+		</div>
+	<!-- /Main -->
+
+
+
+	<!--Footer Copyright -->
+		<footer id="copyright" class="container">
+			Author: <a href="http://github.com/dlumbrer">David Moreno Lumbreras</a> - Práctica final de la asignatura SAT
+		</footer>
+
+
+	</body>
+</html>
